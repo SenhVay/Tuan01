@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: auto;
+        }
+        .container {
+            background-color: #87cefa;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 20px;
+            width: 800px;
+            height: auto;
+            margin: 30px auto;
+        }
+        table {
+            width: 100%;
+            margin-top: 20px;
+        }
+        textarea {
+            height: 100px;
+            width: 400px
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buttons input {
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <table>
+                <tr>
+                    <td colspan="4" align="center">
+                        <img src="../IMAGES/Bai6.png" alt="">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" align="center">
+                        <h1>Registration Form</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="fname">First Name:</label></td>
+                    <td><input type="text" id="fname" name="fname"></td>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" id="lname" name="lname"></td>
+                </tr>
+                <tr>
+                    <td><label for="address1">Address #1:</label></td>
+                    <td colspan="3"><input type="text" id="address1" name="address1" size="30px"></td>
+                </tr>
+                <tr>
+                    <td><label for="address2">Address #2:</label></td>
+                    <td colspan="3"><input type="text" id="address2" name="address2" size="30px"></td>
+                </tr>
+                <tr>
+                    <td><label for="city">City:</label></td>
+                    <td><input type="text" id="city" name="city"></td>
+                    <td><label for="state">State:</label></td>
+                    <td><input type="text" id="state" name="state"></td>
+                </tr>
+                <tr>
+                    <td><label for="zip">Zip:</label></td>
+                    <td><input type="text" id="zip" name="zip" class="short"></td>
+                    <td><label for="country">Country:</label></td>
+                    <td>
+                        <select id="country" name="country">
+                            <option value="usa">United States</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr><td colspan="4"><hr></td></tr>
+                <tr>
+                    <td><label for="product">Product:</label></td>
+                    <td colspan="3">
+                        <select id="product" name="product">
+                            <option value="scanmaster">ScanMaster</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date Purchased:</label></td>
+                    <td colspan="3"><input type="text" id="date" name="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="serial">Serial #:</label></td>
+                    <td colspan="3"><input type="text" id="serial" name="serial"></td>
+                </tr>
+                <tr>
+                    <td>Used for:</td>
+                    <td colspan="3">
+                        <input type="radio" id="home" name="used_for" value="home">
+                        <label for="home">Home</label>
+                        <input type="radio" id="business" name="used_for" value="business" checked>
+                        <label for="business">Business</label>
+                        <input type="radio" id="govt" name="used_for" value="govt">
+                        <label for="govt">Government</label>
+                        <input type="radio" id="edu" name="used_for" value="edu">
+                        <label for="edu">Educational Institution</label>
+                        <input type="radio" id="other" name="used_for" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>System:</td>
+                    <td colspan="3">
+                        <input type="checkbox" id="windows" name="system" value="windows">
+                        <label for="windows">Windows</label>
+                        <input type="checkbox" id="mac" name="system" value="mac">
+                        <label for="mac">Macintosh</label>
+                        <input type="checkbox" id="unix" name="system" value="unix">
+                        <label for="unix">UNIX</label>
+                        <input type="checkbox" id="other_sys" name="system" value="other">
+                        <label for="other_sys">Other</label>
+                    </td>
+                </tr>
+                <tr><td colspan="4"><hr></td></tr>
+                <tr>
+                    <td><label for="comments">Comments?</label></td>
+                    <td colspan="3" align="right"><textarea id="comments" name="comments"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="4" class="buttons">
+                        <input type="submit" value="Click to register">
+                        <input type="reset" value="Click to cancel">
+                    </td>
+                </tr>
+            </table>
+    </div>
+</body>
+</html>
